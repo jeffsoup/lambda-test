@@ -6,7 +6,7 @@ orbs:
 workflows:
   node-tests: 
     jobs:
-      - node/test
-      filters:
-        branches:
-          only: master
+      - node/test:
+          filters:
+            branches:
+              only: master
